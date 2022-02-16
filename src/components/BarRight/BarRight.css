@@ -1,0 +1,27 @@
+.barRight{
+    /* flex: 0.3; */
+    flex: 0.5;
+
+    overflow-y: scroll;
+    -ms-overflow-style: none; /*ie, edge*/
+    scrollbar-width: none; /*firefox*/
+
+}
+
+.barRight::-webkit-scrollbar{
+    display: none;
+}
+
+.barRight__barRightContainer {
+    margin: .7rem 1rem 1.5rem 2rem;
+    padding: 2rem;
+    background-color: var(--noctua-background-2);
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+   .barRight{
+       display: none;
+   } 
+}
+

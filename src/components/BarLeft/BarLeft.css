@@ -1,0 +1,66 @@
+.barleft{
+    border-right: 1px solid var(--noctua-background);
+    flex: 0.2;
+    padding-top: 2rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    min-width: fit-content;
+}
+
+.barleft__noctuaIcon{
+    color: var(--noctua-color);
+    font-size: 3rem !important;
+    margin-left: -3rem;
+    margin-bottom:-4rem;
+    margin-top: -4rem;
+}
+
+.barleft__noctua{
+    background-color: var(--noctua-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 3rem !important;
+    height: 5rem;
+    margin-top: 2rem !important;
+
+    width: 100%;
+}
+
+.barleft__noctua>div{
+    max-width: 3rem;
+    margin-top: .3rem;
+    margin-left: .3rem;
+}
+
+
+@media screen and (max-width: 1282px){
+    .barleft__noctua{
+        width: 5rem !important;
+
+    }
+    .barleft{
+        flex: unset !important;
+    }
+    .barleft__noctua span{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .barleft{
+        display: none;
+    }
+
+    .barleft__noctua{
+        margin-left: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 1282px){
+    .barleft__noctua >div{
+        display: none
+    }
+}

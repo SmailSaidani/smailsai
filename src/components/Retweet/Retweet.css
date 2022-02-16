@@ -1,0 +1,231 @@
+.postr{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 3px solid var(--noctua-background);
+    border-top: 3px solid var(--noctua-background);
+    border-left: 3px solid var(--noctua-background);
+    border-right: 3px solid var(--noctua-background);
+    padding-bottom:1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.postr:hover{
+    background: #f8fafc;
+}
+
+
+.postr__body{
+    flex: 1;
+    padding: 1rem;
+}
+.postr__body  img{
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+    cursor: pointer;    
+}
+
+.postr__headerDescription {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.postr__headerDescription p{
+    line-height: 2.1rem;
+}
+.postr__HeaderText{
+    display: flex;
+    flex-direction: row;
+}
+.postr__HeaderText h3{
+    flex: 1;
+    font-size: 1.5rem;
+    margin: .8rem 0 1rem;
+}
+.postr__badge{
+    font-size: 1.4rem !important;
+    color: var(--noctua-color);
+}
+.postr__headerSpacial{
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+.postr__avatar{
+    padding: 2rem;
+}
+
+.postr__headerExpandIcon{
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.postr__headerExpandIcon:hover{
+    background: #e8f5fe;
+    color: var(--noctua-color);
+}
+
+
+
+
+.postr__headerExpandIcon{
+    padding: 1rem;
+    border-radius: 50%;
+}
+.postr__headerExpandIcon:hover{
+    background: #e8f5fe;
+    color: var(--noctua-color);
+}
+
+.delete{
+    color: red;
+}
+
+.retweet-section{
+    border-bottom-right-radius: 1px solid var(--noctua-background);
+    border-top: 1px solid var(--noctua-background);
+    border-bottom: 1px solid var(--noctua-background);
+    padding-bottom:1rem;  
+}
+.retweet-section:hover{
+    background: #F5F8FA;
+}
+
+.retweet{
+    display: flex;
+    padding-bottom:1rem;   
+}
+
+
+.retweet__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+.retweet__expandList{
+    list-style: none;
+    padding: 0 0 0 0;
+    border-radius: 2rem;
+}
+
+.retweet__expandList li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;   
+    padding: 1.2rem; 
+    background: white;
+    cursor: pointer;
+    min-width: 20rem;
+}
+
+.retweet__expandList li:first-child{
+    border-radius: 1rem 1rem 0 0 !important;
+}
+
+.retweet__expandList li:last-child{
+    border-radius: 0rem 0rem 1rem 1rem !important;
+}
+
+.retweet__expandList li:hover{
+    background: var(--noctua-background-2) !important;
+}
+
+.retweet__expandList li>h3{
+    font-weight: 400 !important;
+}
+
+.retweet__expandList>li>div{
+    margin-right: 1rem;
+}
+
+.retweet__expandList>li>div .MuiSvgIcon-root{
+    font-size: 1.8rem;
+    padding: .5rem 0rem 0rem 0rem;
+}
+.retweet__body{
+    flex: 1;
+    padding: 1rem;
+}
+.retweet__body  img{
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+    cursor: pointer;    
+}
+.retweet__headerDescription {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.retweet__headerDescription p{
+    line-height: 2.1rem;
+}
+.retweet__HeaderText{
+    display: flex;
+    flex-direction: row;
+}
+.retweet__HeaderText h3{
+    flex: 1;
+    font-size: 1.5rem;
+    margin: .8rem 0 1rem;
+}
+.retweet__badge{
+    font-size: 1.4rem !important;
+    color: var(--noctua-color);
+}
+.retweet__headerSpacial{
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+.retweet__avatar{
+    padding: 2rem;
+margin-right: 2px;
+}
+
+.retweet__headerExpandIcon{
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.retweet__headerExpandIcon:hover{
+    background: #e8f5fe;
+    color: var(--noctua-color);
+}
+
+.retweet__headerDescription-moment{
+    
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: gray;  
+}
+
+
+.retweet__headerExpandIcon{
+    padding: 1rem;
+    border-radius: 50%;
+}
+.retweet__headerExpandIcon:hover{
+    background: #e8f5fe;
+    color: var(--noctua-color);
+}
+.retweet__headerDescription {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.retweet__headerDescription p{
+    line-height: 2rem;
+    font-weight: 400;
+}

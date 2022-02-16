@@ -1,0 +1,240 @@
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--noctua-background);
+    padding-bottom: 1rem;
+}
+
+.post:hover{
+    background: #F5F8FA;
+}
+
+.post__body{
+    flex: 1;
+    padding: 1rem;
+}
+
+.post__body> img{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    cursor: pointer;    
+}
+
+.post__headerDescription {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.post__headerDescription>p{
+    line-height: 2.1rem;
+}
+
+.post__headerText{
+    display: flex;
+    flex-direction: row;
+}
+
+.post__headerText>h3{
+    flex: 1;
+    font-size: 1.5rem;
+    margin: .8rem 0 1rem;
+}
+
+.post__badge{
+    font-size: 1.4rem !important;
+    color: var(--noctua-color);
+}
+
+.post__headerSpecial{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.post__avatar{
+    padding: 2rem;
+}
+
+.post__footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.1rem 0 0 0;
+}
+
+.post__headerExpandIcon{
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.post__headerExpandIcon:hover{
+    background: #e8f5fe;
+    color: var(--noctua-color);
+}
+
+.post__expandList{
+    list-style: none;
+    padding: 0 0 0 0;
+    border-radius: 2rem;
+}
+
+.post__expandList li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;   
+    padding: 1.2rem; 
+    background: white;
+    cursor: pointer;
+    min-width: 20rem;
+}
+
+.post__expandList li:first-child{
+    border-radius: 1rem 1rem 0 0 !important;
+}
+
+.post__expandList li:last-child{
+    border-radius: 0rem 0rem 1rem 1rem !important;
+}
+
+.post__expandList li:hover{
+    background: var(--noctua-background-2) !important;
+}
+
+.post__expandList li>h3{
+    font-weight: 400 !important;
+}
+
+.post__expandList>li>div{
+    margin-right: 1rem;
+}
+
+.post__expandList>li>div .MuiSvgIcon-root{
+    font-size: 1.8rem;
+    padding: .5rem 0rem 0rem 0rem;
+}
+
+.post__replyingTo {
+    font-size: 1.5rem;
+    color: var(--noctua-light);
+}
+
+.post__replyingTo>a{
+    color: var(--noctua-color)
+}
+
+.post__replyingTo>a:hover{
+    text-decoration: underline !important;
+}
+
+
+.delete{
+    color: red;
+}
+.retweetsNumber{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+.commentsNumber{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.noctuaBox__input-actions .MuiPopover-paper{
+    box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px !important;
+}
+
+.post__statusPostHeader{
+    flex: 1;
+    margin-top: .5rem;
+    font-size: 1.4rem;
+} 
+
+.bottomWhited{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+/* 
+.BarMiddle__header-ava{
+    margin-right: 2rem;
+}
+
+.BarMiddle__header > h2 {
+    font-size: 2rem;
+    flex: 1;
+    font-weight: 800;
+}
+
+.BarMiddle__loader{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center !important;
+}
+
+/* hide scrollbar for chrome, safari, and opera */
+/* .BarMiddle::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media screen and (max-width: 1282px){
+    .barMiddle {
+        flex: 1 !important;
+    }
+} */ 
+.footerIcon_wrapper{
+    flex: 1;
+    font-size: 1.4rem;
+    display: flex;
+    font-weight: 400;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--noctua-light);
+    cursor: pointer;
+}
+
+.footerIcon_wrapper .MuiSvgIcon-root {
+    font-size: 1.8rem;
+    color: var(--noctua-light);
+    border-radius: 50%;
+}
+
+.footerIcon_wrapper .MuiSvgIcon-root:hover{
+    background-color: var(--noctua-background);
+}
+
+.footerIcon__counter{
+    margin-left: 1.5rem;
+}
+
+.liked .MuiSvgIcon-root{
+    color: var(--noctua-red) !important;
+}
+.retweetsNumber{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+.commentsNumber{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+.profile__backArrow{
+    padding: .65rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}

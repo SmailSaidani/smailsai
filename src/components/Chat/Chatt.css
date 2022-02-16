@@ -1,0 +1,232 @@
+.BarMiddle {
+  flex: 1;
+  border-right: 1px solid var(--noctua-background);
+  /* min-width: fit-content; */
+  overflow-y: scroll;
+  -ms-overflow-style: none; /*ie, edge*/
+  scrollbar-width: none; /*firefox*/
+}
+
+.BarMiddle__header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+ /* border-bottom: 1px solid var(--noctua-background);*/
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1px;
+}
+
+.BarMiddle__header-ava{
+  margin-right: 2rem;
+}
+
+.BarMiddle__header > h2 {
+  font-size: 2rem;
+  flex: 1;
+  font-weight: 800;
+}
+
+/* hide scrollbar for chrome, safari, and opera */
+.BarMiddle::-webkit-scrollbar{
+  display: none;
+}
+
+.users_container {
+  border-right: 2px solid var(--noctua-background);
+  overflow-y: auto;
+}
+
+.messages_container {
+  position: relative;
+  width: 100%;
+}
+
+/*.messages_user {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--noctua-background);
+}*/
+
+.no_conv {
+  margin-top: 20px;
+  font-size: 20px;
+  /*color: var(--noctua-light);*/
+  text-align: center;
+}
+
+.messages {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  /*border-bottom: 1px solid var(--color-6);*/
+}
+/*message*/
+.message_wrapper {
+  margin-top: 5px;
+  padding: 0px 5px;
+}
+.message_wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+.message_wrapper p {
+  padding: 10px;
+  display: inline-block;
+  max-width: 50%;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+.message_wrapper small {
+  display: inline-block;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+.message_wrapper.own {
+  text-align: right;
+}
+
+.friend {
+  background:var(--noctua-background);
+}
+
+.me {
+  background:var(--noctua-color);
+  color: white;
+}
+/*fin message*/
+
+/*search*/
+.wrapper{
+  padding:1rem 1rem .7rem 2rem; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+
+.search-input{
+  display: flex;
+  align-items: center;
+  background-color:white;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid var(--noctua-background);
+}
+
+.search-input input {
+  outline: none;
+  padding: 0 60px 0 20px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.search-input .MuiSvgIcon-root{
+  color: var(--noctua-light);
+}
+
+.search-input.beingPressed{
+  border: 1px solid var(--noctua-color);
+  background: white;
+}
+
+.search-input.beingPressed>input{
+  background-color: white;
+  border:1px solid white;
+}
+
+.search-input.beingPressed .MuiSvgIcon-root{
+  color: var(--noctua-color)
+}
+/*finsearch*/
+
+/*messag form*/
+.chat__footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 6.2rem;
+border-top: 1px solid var(--noctua-background);
+padding: 0 1rem 0 .6rem;
+}
+
+.chat__footer-ImageBox{
+position: absolute;
+bottom: 7rem;
+border-radius: 2rem;
+/* box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px !important; */
+width: 19rem;
+height: 23rem;
+background: var(--noctua-background);
+}
+
+.chat__footer-ImageBox>img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 2rem;
+}
+
+.chat__footer > form {
+flex: 1;
+display: flex;
+align-items: center;
+}
+
+.chat__footer>form>input{
+flex: 1 1;
+padding: 0.5rem 1rem;
+/* margin: 0 0 0 1rem; */
+border: .2rem solid var(--noctua-color);
+line-height: 3rem;
+font-size: 1.5rem;
+border-right: none;
+outline: none;
+border-radius: 2rem 0 0 2rem;
+}
+
+.chat__footer>form>button{
+display: none;
+}
+
+.chat__footer .MuiSvgIcon-root{
+font-size: 3rem !important;
+cursor: pointer;
+}
+
+.chat__footer-emowrapper {
+padding: .4rem 1rem .3rem 0rem;
+border: .2rem solid var(--noctua-color);
+border-left: none;
+border-radius: 0 2rem 2rem 0;
+margin-left: -.1rem;
+margin-right: 1rem;
+}
+
+.readyBtn{
+/*color: rgba(29,161,242,1.00) !important;*/
+color: var(--noctua-color);
+}
+
+.spinnerSpan{
+font-size: 2rem;
+color: var(--noctua-color);
+}
+/*fin messagform*/
+
+@media screen and (max-width: 1282px){
+  .BarMiddle {
+      flex: 1 !important;
+  }
+}
+
+@media screen and (max-width:1000px){
+.users_container{
+  display: none;
+} 
+}

@@ -1,0 +1,98 @@
+.BarMiddle {
+
+  flex: 1;
+  border-right: 1px solid var(--noctua-background);
+  /* min-width: fit-content; */
+  overflow-y: scroll;
+
+  -ms-overflow-style: none; /*ie, edge*/
+  scrollbar-width: none; /*firefox*/
+}
+.user_wrapperr {
+ 
+  flex: 1;
+  cursor: pointer;
+  border-bottom: 1px solid var(--noctua-background);
+  padding: 1.5rem 2rem;
+  
+}
+.BarMiddle__header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border-bottom: 1px solid var(--noctua-background);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+ 
+  margin-right: 1px;
+}
+
+.user_infoo {
+  
+  justify-content: space-between;
+  flex: 1;
+  border-top: 1px solid var(--noctua-background);
+  padding: 1.5rem 1.5rem;
+  flex-direction: column;
+}
+.user_detailll {
+  display: flex;
+  align-items:flex-start;
+  cursor: pointer;
+}
+.user_detailll:hover{
+  color: blue;
+}
+.user_wrapperr > h2 {
+  font-size: 2rem;
+  
+  font-weight: 700;
+  padding: 1rem 1rem;
+
+  
+}
+
+.avatars{
+  flex-direction: column;
+}
+.avatarr {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.user_detaill p {
+    font-size: 18px;
+    margin:10px;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    cursor: pointer;
+    
+}
+.notif__headerDescription-moment{
+  font-size: 18px;
+  margin:10px;
+  margin-bottom: 20px;
+  align-items: center;
+  cursor: pointer;
+  color: gray;  
+}
+.user_detaill {
+  display: flex;
+  margin-right:1rem;
+  padding: 1rem;
+ 
+}
+@media screen and (max-width: 1282px){
+  .BarMiddle {
+      flex: 1 !important;
+  }
+}
+
+@media screen and (min-width: 500px){
+  .BarMiddle__header-ava{
+      display: none;
+  }
+}

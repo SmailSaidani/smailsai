@@ -1,0 +1,77 @@
+.barRight{
+    /* flex: 0.3; */
+    flex: 0.5;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /*ie, edge*/
+    scrollbar-width: none; /*firefox*/
+  }
+
+.barRight::-webkit-scrollbar{
+    display: none;
+  }
+
+.user_wrapper {
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+.user_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.user_detail {
+    display: flex;
+    align-items: center;
+  }
+
+.user_detail h2 {
+    margin-left:10px;
+  }
+
+.user_status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+.online {
+    background: #34eb52;
+  }
+
+.offline {
+    background: var(--noctua-red);
+  }
+
+.selected_user {
+    background: var(--noctua-background);
+  }
+
+.truncate {
+    font-size: 14px;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.truncate strong {
+    margin-right: 10px;
+  }
+
+.unread {
+    margin-left: 10px;
+    background:var(--noctua-color);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 10px;
+  }
+
+/*.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-4);
+}*/

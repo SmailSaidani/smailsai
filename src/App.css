@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+
+}
+
+html{
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+:root{
+    --noctua-color :#5e00bd;     /* color pour les bottons et les icons */
+    --noctua-background: #e6ecf0;     /*color pour les scrollbar */
+    --noctua-darker-color: #1da1f2;  /* color de bottom_nav responsive telephone*/
+    --noctua-background-2: #f5f8fa;
+    --noctua-light: rgb(101, 119,134);  /* pour les hover des icons profile*/
+    --noctua-hover: #e8f5fe;             /* hover pour les icons de la bar Left */
+    --noctua-background-2: #ebebeb;  /*color de profile*/
+    --noctua-red: rgb(224, 36, 94); /* pour la convirsation info*/
+}
+
+.app{
+    display: flex;
+    height: auto;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+
+    flex-direction: column;
+}
+
+.app__mainContent{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.react-responsive-modal-modal{
+    top: 4.5vh;
+    width: 85vh;
+    height: fit-content;
+    min-height: 85vh;
+    border-radius: 2rem;
+    padding: 0;
+}
+
+.react-responsive-modal-closeButton{
+    display: none;
+}
+
+.MuiCircularProgress-colorPrimary{
+    color: var(--noctua-color) !important;
+}
+
+.app__main{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.MuiPopover-paper{
+    box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px !important;
+}
+
+.emoji-picker-react input.emoji-search{
+    border: 2px solid var(--noctua-color) !important;
+    border-radius: 3rem;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.tabbarMenu .react-swipeable-view-container .MuiBox-root-6 {
+    padding: 0;
+}
+
+.addMoreLeftPadd{
+    padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .app__mainContent{
+        height: calc(100vh - 4.5rem);        
+    }
+}

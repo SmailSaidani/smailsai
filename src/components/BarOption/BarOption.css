@@ -1,0 +1,41 @@
+.barOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.barOption:hover{
+    background-color: var(--noctua-hover);
+    border-radius: 3rem;
+    color: var(--noctua-color);
+    transition: color 100ms ease-out;
+}
+
+.bar__active{
+    color: var(--noctua-color);
+}
+
+.barOption>h2{
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-right: 2rem;
+}
+
+.barOption > .MuiSvgIcon-root {
+    font-size: 2.4rem;
+    padding: 1.4rem 1.4rem 1.4rem 2rem;
+}
+
+@media screen and (max-width: 1282px){
+    .barOption >h2{
+        display: none;
+    }
+    .barOption> .MuiSvgIcon-root{
+        margin-left: auto;
+    }
+    .barOption{
+        width: fit-content;
+    }
+}

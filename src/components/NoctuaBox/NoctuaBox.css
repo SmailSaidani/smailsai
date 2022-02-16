@@ -1,0 +1,156 @@
+.noctuaBox {
+    padding-bottom: 1rem;
+    border-bottom: .3rem solid var(--noctua-background);
+    padding-right: 1rem;
+}
+
+.noctuaBox>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.noctuaBox__wrapperInput{
+    display:flex;
+    flex-direction:row
+}
+
+.noctuaBox__ava{
+    padding: 2rem;
+}
+
+.noctuaBox__input {
+    display:flex;
+    flex-direction:column; 
+    flex:1;
+    margin-left: 1rem;    
+}
+
+.noctuaBox__input-image{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.noctuaBox__input-image::after{
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.noctuaBox__input-image>img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+
+    opacity: 1; 
+    transition: opacity 1.5s ease-out;
+}
+
+.noctuaBox__input> input{
+    flex: 1 1;
+    border: none;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 3rem 0 2rem 0;
+}
+
+.noctuaBox__input>textarea{
+    overflow:hidden;
+    padding: 3rem 0 2rem 0;
+    max-width: 100%;
+    font-size:1.6rem;
+    resize: none;
+    display:flex;
+    border: none;
+    outline: none;
+    font-family: inherit !important;
+    font-weight: 499 !important;
+    color: inherit !important;
+}
+
+.noctuaBox__imageInput{
+    border: none;
+    padding: 1rem;
+}
+
+.noctuaBox__noctuaButton{
+    background-color: var(--noctua-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 3rem !important;
+    height: 4rem;
+    width: 8rem;
+    margin-top: 2rem !important;  
+    margin-left: auto !important;
+}
+
+.cancelIcon{
+    font-size: 3.5rem !important;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: 2;
+    cursor: pointer !important;
+}
+
+.cancelIcon:hover{
+    opacity: 0.6;    
+}
+
+.editImage{
+    background-color: black !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 500 !important;
+    text-transform: inherit !important;
+    border-radius: 3rem !important;
+    height: 3rem;
+    position: absolute !important;
+    right: .8rem;
+    top: .7rem;
+    font-size: 1.6rem !important;
+}
+
+.editImage:hover{
+    opacity: 0.6;
+}
+
+.noctuaBox__input-actions{
+    display:flex !important;
+    flex-direction:row !important;
+}
+
+.noctuaBox__input-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    margin-left: -.8rem;
+}
+
+.noctuaBox__input-icons>div{
+    padding: .6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.noctuaBox__input-icons>div:nth-child(3){
+    transform: rotate(90deg);
+}
+
+.noctuaBox__input-icons>div:hover{
+    background-color: #f5f8fa;
+}
+
+.noctuaBox__input-icons .MuiSvgIcon-root{
+    font-size: 2rem;
+    color: var(--noctua-color);
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,129 @@
+.barAccount__wrapper{
+    display: flex;
+    flex-direction: row;
+    border-radius: 3rem;
+    align-items: center;
+    margin-top: 20%;
+
+}
+
+.barAccount__ava{
+    border-radius: 50%;
+    padding: 1rem;
+   
+}
+
+.barAccount__wrapper:hover{
+    background-color: #e8f5fe;
+}
+
+.barAccount__userData{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.barAccount__userData h2:nth-child(2){
+    color: var(--noctua-light);
+    font-weight: 450;
+}
+
+.barAccount__expandIcon{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.MuiPopover-paper  {
+    border-radius: 2rem !important;
+}
+.logoutBtn{
+    cursor: pointer;
+}
+@media screen and (max-width: 1282px){
+    .sidebarAccount__userData, .sidebarAccount__expandIcon {
+        display: none;
+    } 
+}
+
+
+
+
+.user__item{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.nocursor{
+    cursor: unset !important;
+}
+
+
+.logoutBtn h3{
+    margin-left: 2rem; 
+}
+.logoutBtn h3:hover{
+ color: var(--noctua-color);
+}
+.user__details{
+    margin-left: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.user__details>span{
+    font-size: 1.1rem;
+    color: var(--noctua-light);
+}
+
+.user__item .MuiSvgIcon-root{
+    padding: 1rem;
+    color: var(--noctua-color);
+}
+
+
+//post expandListe
+.post__expandList{
+    list-style: none;
+    padding: 0 0 0 0;
+    border-radius: 2rem;
+}
+
+.post__expandList li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;   
+    padding: 1.2rem; 
+    background: white;
+    cursor: pointer;
+    min-width: 20rem;
+}
+
+.post__expandList li:first-child{
+    border-radius: 1rem 1rem 0 0 !important;
+}
+
+.post__expandList li:last-child{
+    border-radius: 0rem 0rem 1rem 1rem !important;
+}
+
+.post__expandList li:hover{
+    background: var(--noctua-background-2) !important;
+}
+
+.post__expandList li>h3{
+    font-weight: 400 !important;
+}
+
+.post__expandList>li>div{
+    margin-right: 1rem;
+}
+
+.post__expandList>li>div .MuiSvgIcon-root{
+    font-size: 1.8rem;
+    padding: .5rem 0rem 0rem 0rem;
+}

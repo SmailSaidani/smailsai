@@ -1,0 +1,168 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--noctua-background);
+    padding-bottom: 1rem;
+}
+
+.comment:hover{
+    background: #F5F8FA;
+}
+
+.comment__body{
+    flex: 1;
+    padding: 1rem;
+}
+
+.comment__body> img{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    cursor: pointer;    
+}
+.retweet__headerDescription-moment{
+    
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: gray;  
+}
+.comment__headerDescription {
+   
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.comment__headerDescription>p{
+    line-height: 2.1rem;
+}
+
+.comment__headerText{
+    display: flex;
+    flex-direction: row;
+}
+
+.comment__headerText>h3{
+    flex: 1;
+    font-size: 1.5rem;
+    margin: .8rem 0 1rem;
+}
+
+.comment__badge{
+    font-size: 1.4rem !important;
+    color: var(--noctua-color);
+}
+
+.comment__headerSpecial{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.comment__avatar{
+    padding: 2rem;
+}
+
+.comment__footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.1rem 0 0 0;
+}
+
+.comment__headerExpandIcon{
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.comment__headerExpandIcon:hover{
+    background: #e8f5fe;
+    color: var(--noctua-color);
+}
+
+.comment__expandList{
+    list-style: none;
+    padding: 0 0 0 0;
+    border-radius: 2rem;
+}
+
+.comment__expandList li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;   
+    padding: 1.2rem; 
+    background: white;
+    cursor: pointer;
+    min-width: 20rem;
+}
+
+.comment__expandList li:first-child{
+    border-radius: 1rem 1rem 0 0 !important;
+}
+
+.comment__expandList li:last-child{
+    border-radius: 0rem 0rem 1rem 1rem !important;
+}
+
+.comment__expandList li:hover{
+    background: var(--noctua-background-2) !important;
+}
+
+.comment__expandList li>h3{
+    font-weight: 400 !important;
+}
+
+.comment__expandList>li>div{
+    margin-right: 1rem;
+}
+
+.comment__expandList>li>div .MuiSvgIcon-root{
+    font-size: 1.8rem;
+    padding: .5rem 0rem 0rem 0rem;
+}
+
+.comment__replyingTo {
+    font-size: 1.5rem;
+    color: var(--noctua-light);
+}
+
+.comment__replyingTo>a{
+    color: var(--noctua-color)
+}
+
+.comment__replyingTo>a:hover{
+    text-decoration: underline !important;
+}
+
+
+.delete{
+    color: red;
+}
+.retweetsNumber{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+.commentsNumber{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.noctuaBox__input-actions .MuiPopover-paper{
+    box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px !important;
+}
+
+.comment__statusPostHeader{
+    flex: 1;
+    margin-top: .5rem;
+    font-size: 1.4rem;
+} 
+
+.bottomWhited{
+    border-bottom: none;
+    padding-bottom: 0;
+}
